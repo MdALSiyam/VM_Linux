@@ -1,0 +1,148 @@
+pwd
+mv .bash_history bash_history_bk
+exit
+pwd
+rm myDir/myNestedDir/*
+ls
+cd myDir/myNestedDir
+ls
+cd ..
+pwd
+rmdir myDir/myNestedDir
+cd myDir
+ls
+exit
+pwd
+mkdir /home/sm/ExamDir
+ls
+mkdir -p myDir/myNestedDir
+ls
+cd myDir
+ls
+cd ..
+pwd
+mkdir ExamDir/nestedDir
+ls
+cd ExamDir
+ls
+cd ..
+pwd
+touch ExamDir/myFirstFile.txt
+la
+ls
+cd ExamDir
+ls
+cat myFirstFile.txt
+pwd
+cd ...
+cd ..
+pwd
+touch ExamDir/nestedDir/file(1..10)
+touch ExamDir/nestedDir/file{1..10}
+ls
+cd /ExamDir/nestedDir
+cd /ExamDir
+cd ExamDir
+ls
+cd nestedDir
+ls
+cd ..
+mv ExamDir/myFirstFile.txt ExamDir/myFirstFileRenamed.txt
+cd ..
+mv ExamDir/myFirstFile.txt ExamDir/myFirstFileRenamed.txt
+ls
+cd ExamDir
+ls
+cd ..
+ls -lhs ~
+ls -R ~
+pwd
+touch ExamDir/nestedDir/myExamFile.txt
+cd ExamDir/nestedDir
+ls
+echo "This text is for file10" > ExamDir/nestedDir/file10
+cd ..
+echo "This text is for file10" > ExamDir/nestedDir/file10
+cd ExamDir/nestedDir
+ls
+cat file10
+cd ..
+echo "This text is for myExamFile" > ExamDir/nestedDir/myExamFile.txt
+cd ExamDir/nestedDir
+ls
+cat myExamFile.txt
+cd ..
+echo "This is second line for myExamFile.txt" >> ExamDir/nestedDir/myExamFile.txt
+cd ExamDir/nestedDir
+cat myExamFile.txt
+su ~
+cd /
+pwd
+su ~
+sudo su
+sudo chown second:second ExamDir/nestedDir/myExamFile.txt
+ls
+pwd
+cd sm
+cd ~
+pwd
+sudo chown second:second ExamDir/nestedDir/myExamFile.txt
+chmod o+x ExamDir/nestedDir/myExamFile.txt
+sudo chmod o+x ExamDir/nestedDir/myExamFile.txt
+su ~ second
+su - second
+su ~ second
+su - second
+pwd
+head -n 2 ExamDir/nestedDir/myExamFile.txt
+tail -n 2 ExamDir/nestedDir/myExamFile.txt
+less -n 2 ExamDir/nestedDir/myExamFile.txt
+less ExamDir/nestedDir/myExamFile.txt
+man tar
+tar -cvf examzip.tar ExamDir
+cp ExamDir/nestedDir/* myDir/myNestedDir/
+ls
+cd myDir/myNestedDir
+ls
+cd 
+cd ..
+ls
+cd ..
+ls
+pwd
+su - sm
+exit
+cd /media/
+ls
+sudo cp /media/sf_vm_shared/myrepo.repo /etc/yum.repos.d/myrepo.repo
+sudo cd /etc/yum.repos.d
+cd /etc/yum.repos.d
+ls
+sudo cat myrepo.repo
+cd /dev
+ls -al
+cd /mapper
+ls
+df -h
+sudo du -sh /var/log
+cp smExam1.txt
+cp .bash_history smExam1
+mv smExam1 smExam1.txt
+cp smExam1.txt /media/vm_shared
+sudo cp smExam1.txt /media/vm_shared
+sudo shutdown -h now
+rpm --checksig package.rpm
+sudo rpm --checksig package.rpm
+dnf upgrade httpd
+sudo dnf upgrade httpd
+rpm -ivh httpd.rpm
+sudo rpm -ivh httpd.rpm
+yum repolist all
+clear
+pwd
+sudo ./VBoxLinuxAdditions.run
+cd /mnt/cdrom
+sudo ./VBoxLinuxAdditions.run
+sudo mount /dev/cdrom /mnt/cdrom
+cd /mnt/cdrom
+sudo reboot

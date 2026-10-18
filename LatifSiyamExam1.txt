@@ -1,0 +1,47 @@
+mv .bash_history bash_history_bk
+exit
+mkdir /home/sm/ExamDir
+mkdir -p myDir/myNestedDir
+mkdir ExamDir/nestedDir
+touc
+touch ExamDir/myFirstFile.txt
+touch ExamDir/nestedDir/file{1..10}
+mv ExamDir/myFirstFile.txt ExamDir/myFirstFileRenamed
+mv ExamDir/myFirstFile.txt ExamDir/myFirstFileRenamed.txt
+ls _R ~/ExamDir
+ls -R ~/ExamDir
+ls -R ~/
+ls -R ~/myDir
+mv ExamDir/myFirstFileRenamed ExamDir/myFirstFileRenamed.txt
+ls -lhr ~
+ls -R ~
+ls -lhr ExamDir/nestedDir
+touch ExamDir/nestedDir/myExamFile.txt
+echo "This text is for file10
+echo "This text is for file10" > ExamDir/nestedDir/file10
+echo "This text is for myExamFile.txt" > ExamDir/nestedDir/myExamFile.txt
+echo "This is second for myExamFile.txt" > ExamDir/nestedDir/myExamFile.txt
+echo "This is second line for myExamFile.txt" >> ExamDir/nestedDir/myExamFile.txt
+cat ExamDir/nestedDir/myExamFile.txt
+sudo useradd second
+sudo passwd second
+sudo chmod o+x ExamDir/nestedDir/myExamFile.txt
+sudo chown second:second ExamDir/
+sudo chown second:second ExamDir/nestedDir/myExamFile.txt
+ls -l
+su - second
+sudo su - second 
+sudo su - second -c "echo 'Text added from second user' >> /home/sm/ExamDir/nestedDir/myExamFile.txt"
+
+sudo su - second -c "echo 'Text added from second user' >> /home/sm/ExamDir/nestedDir/myExamFile.txt"
+sudo chown sm:sm ExamDir/nestedDir/myExamFile.txt
+head -n 2 ExamDir/nestedDir/myExamFile.txt
+tail -n 2 ExamDir/nestedDir/myExamFile.txt
+less ExamDir/nestedDir/myExamFile.txt
+tar -cvf examzip.tar ExamDir
+cp ExamDir/nestedDir/* myDirr/myNestedDir/
+cp ExamDir/nestedDir/* myDir/myNestedDir/
+ls
+rm myDir/myNestedDir/*
+rmdir myDir/myNestedDir
+exit

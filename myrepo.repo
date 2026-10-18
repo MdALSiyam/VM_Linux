@@ -1,0 +1,6 @@
+[myrepo]
+name=My Custom Repo
+baseurl=http://example.com/repo/
+enabled=1
+gpgcheck=1
+gpgkey=http://example.com/RPM-GPG-KEY

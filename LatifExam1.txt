@@ -1,0 +1,11 @@
+rm -rf ExamDir
+rm -rf myDir
+rm examzip.tar
+rm SiyamExam1 SiyamExam1.txt
+sudo userdel -r second
+ls
+rm smExam1.txt
+clear
+pwd
+mv .bash_history bash_history_bk
+exit
